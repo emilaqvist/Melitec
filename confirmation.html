@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bekräftelse - Melitec</title>
+  <link rel="stylesheet" href="../styles/confirmation.css">
+</head>
+<body>
+
+<!-- Header med kontaktinformation och titel -->
+<header>
+  <div class="container">
+    <div class="header-info">
+      <p><strong>Telefon:</strong> <a href="tel:+4610148777">010 – 14 88 777</a></p>
+      <p><strong>E-post:</strong> <a href="mailto:info@melitec.se">info@melitec.se</a></p>
+    </div>
+    <h1>Melitec - Bekräftelse</h1>
+    <p>Tack för din bokning!</p>
+  </div>
+</header>
+
+<!-- Bekräftelsemeddelande -->
+<section class="confirmation-container">
+  <h2>Din bokning är bekräftad!</h2>
+  <p>Vi har mottagit din bokning för följande tjänst:</p>
+  <div class="confirmation-details">
+    <p><strong>Tjänst:</strong> <span id="serviceName"></span></p>
+    <p><strong>Datum:</strong> <span id="bookingDate"></span></p>
+    <p><strong>Namn:</strong> <span id="customerName"></span></p>
+    <p><strong>E-post:</strong> <span id="customerEmail"></span></p>
+  </div>
+  <button class="back-button" onclick="window.location.href='services.html'">Tillbaka till tjänster</button>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Melitec - IT Service | Alla rättigheter förbehållna</p>
+  </div>
+</footer>
+
+<script>
+  // Hämta data från URL-parametrar (GET) och uppdatera bekräftelsedetaljer
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('serviceName').textContent = params.get('service');
+  document.getElementById('bookingDate').textContent = params.get('date');
+  document.getElementById('customerName').textContent = params.get('name');
+  document.getElementById('customerEmail').textContent = params.get('email');
+</script>
+
+</body>
+</html>

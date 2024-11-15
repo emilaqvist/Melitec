@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* För att centrera innehållet och loggan */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header-container {
+    display: flex;
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    align-items: center;
+    position: relative;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+/* Logga */
+.logo-container {
+    position: absolute;
+    left: 20px; /* Justera om du vill ha loggan ännu närmare kanten */
+}
+
+.logo {
+    width: 168px; /* Ursprunglig storlek på loggan */
+    height: auto; /* Bibehåller proportionerna */
+    margin-right: 20px; /* Utrymme mellan loggan och texten */
+}
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    display: flex; /* Använd flexbox för att enkelt placera loggan och innehållet */
+    align-items: center;
+    justify-content: space-between; /* Fördela utrymmet jämnt mellan loggan och innehållet */
+}
+
+
+.header-subtitle {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 0 15px;
+}
+
+
+
+header h1, header p {
+    margin: 0;
+    text-align: left;
+}
+
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 600; /* Använd tyngre vikt för att göra rubriken mer framträdande */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Navigering */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+/* Header-knappar */
+header nav a {
+    color: #333;  /* Färgen på texten blir mörkgrå för kontrast */
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 10px 20px;  /* Ger knapparna mer utrymme */
+    border-radius: 25px;  /* Runda hörn på knapparna */
+    background-color: #e0e0e0;  /* Lätt grå bakgrund */
+    transition: all 0.3s ease;  /* Mjuk övergångseffekt för interaktivitet */
+    display: inline-block;  /* Gör knapparna i rad */
+}
+
+/* Hover-effekt */
+header nav a:hover {
+    text-decoration: underline;
+    background-color: #d1d1d1;  /* Mörkare grå bakgrund på hover */
+    color: #ff9800;  /* Färgen ändras till orange vid hover */
+}
+
+/* Aktiv länkstil */
+header nav a.active {
+    color: #ff9800;  /* Aktiv länk får orange färg */
+    font-weight: 700;  /* Fet stil för den aktiva länken */
+}
+
+/* Knappar */
+.nav-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ddd;
+    border-radius: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.nav-buttons a:hover {
+    background-color: #bbb;
+}
+
+/* Fokus-stil för tillgänglighet */
+header nav a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #ff9800;  /* En skuggad kant vid fokus för tangentbordssäkring */
+}
+
+
+/* Hero Section */
+.hero-section {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Använd Poppins för rubriker */
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #e68900;
+}
+
+/* Tjänster CTA sektion */
+.cta-services {
+    background-color: #9c1ae8;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-services h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-services p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-services-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 18px 40px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-services-button:hover {
+    background-color: #e68900;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-services-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #ff9800;
+}
+
+.cta-services-button:active {
+    transform: scale(1.05);
+}
+
+/* Tjänster, Om oss, Kontakt sektioner */
+.services-section, .about-section, .contact-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services-section h2, .about-section h2, .contact-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif; /* Använd Poppins för rubriker */
+}
+
+/* Om oss container */
+.about-content-container {
+    background-color: #f4f4f4;  /* Grå bakgrund */
+    border-radius: 12px;  /* Runda hörn */
+    padding: 30px;  /* Avstånd från kanterna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Lätt skugga för att ge djup */
+    margin-top: 30px;  /* Lite extra utrymme från rubriken */
+    max-width: 800px;  /* Begränsar bredden så att den inte blir för bred */
+    margin-left: auto;  /* Centrerar containern */
+    margin-right: auto;  /* Centrerar containern */
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Service Cards */
+.service-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Kontaktformulär container */
+.contact-form-container {
+    background-color: #f4f4f4;  /* Grå bakgrund */
+    border-radius: 12px;  /* Runda hörn */
+    padding: 30px;  /* Avstånd från kanterna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Lätt skugga för att ge djup */
+    margin-top: 30px;  /* Lite extra utrymme från rubriken */
+}
+
+/* General contact section styling */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-section h2 {
+    color: #004188;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #5b636c;
+    margin-bottom: 30px;
+}
+
+/* Contact row layout */
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    text-align: left;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: #004188;
+    margin: 10px 0;
+}
+
+.contact-info p:last-of-type {
+    font-size: 1rem;
+    color: #5b636c;
+}
+
+/* Contact box styling */
+.contact-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for specific contact boxes */
+.call-us {
+    background-color: #0d59ac;
+}
+
+.email-us {
+    background-color: #1f81ec;
+}
+
+.contact-box h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contact-box a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .cta-services-button {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 2em;
+    }
+}
+
+/* Featured Image Section */
+#featured-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; /* Avstånd runt sektionen */
+    background-color: #f9f9f9;
+}
+
+.image-container {
+    max-width: 90%; /* Begränsar bildens bredd för mindre skärmar */
+    border-radius: 12px; /* Runda hörn */
+    overflow: hidden; /* Gör så att rundade hörn fungerar på bilden */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Mjuk skugga för effekt */
+    text-align: center; /* Centrerar bildtexten */
+}
+
+.image-container img {
+    width: 100%; /* Bilden anpassas till containerbredden */
+    height: auto; /* Bevarar proportionerna */
+    display: block; /* Tar bort mellanrum under bilden */
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}

@@ -1,0 +1,164 @@
+/* Grundinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9fbfc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Tjänstekort */
+.service-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    padding: 25px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    background-color: #1a73e8;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.service-card h2 {
+    color: #1a73e8;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2.2em;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.description {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.book-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+/* Stil för Tillbaka-knappen */
+.back-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    background-color: #f4f6f9;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 2px solid #1a73e8;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+.form-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px auto;
+}
+

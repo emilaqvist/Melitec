@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melitec</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Grundstilar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header-styling */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Loggan på vänstersidan */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logo-container h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        /* Tagline i mitten */
+        .tagline {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 0.9em;
+            color: #f0f0f0;
+        }
+
+        /* Navigeringslänkar på höger sida */
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            background-color: #e0e0e0;
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #c0c0c0;
+        }
+
+        /* Sektioner på sidan */
+        .section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        /* Stil för varje persons information */
+        .person-box {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer-styling */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header med logga, tagline och navigeringslänkar -->
+<header>
+    <!-- Logga och företagsnamn -->
+    <div class="logo-container">
+        <img src="path/to/logo.png" alt="Melitec logga">
+        <h1>Melitec</h1>
+    </div>
+
+    <!-- Tagline -->
+    <div class="tagline">Professionella IT-tjänster för dig</div>
+
+    <!-- Navigeringslänkar -->
+    <nav class="nav-links">
+        <a href="services.html">Tjänster</a>
+        <a href="about.html">Om Oss</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+</header>
+
+<!-- Huvudinnehåll -->
+<main>
+    <section class="section">
+        <h2>Om Oss</h2>
+        <p>Välkommen till Melitec! Vi erbjuder professionella IT-tjänster för både privatpersoner och företag. Vårt team består av erfarna experter som är dedikerade till att hjälpa dig med allt inom IT.</p>
+    </section>
+
+    <section class="section">
+        <h3>Vårt Team</h3>
+        <!-- Varje persons information inramad med rundad box -->
+        <div class="person-box">
+            <h4>Anna Svensson</h4>
+            <p>Position: Projektledare</p>
+            <p>Anna har över 10 års erfarenhet inom IT och leder vårt team med stort engagemang.</p>
+        </div>
+        <div class="person-box">
+            <h4>Olof Larsson</h4>
+            <p>Position: Systemutvecklare</p>
+            <p>Olof är en skicklig utvecklare med fokus på backend-lösningar och har arbetat inom branschen i 8 år.</p>
+        </div>
+        <div class="person-box">
+            <h4>Sara Johansson</h4>
+            <p>Position: UX/UI Designer</p>
+            <p>Sara ansvarar för design och användarupplevelse och ser till att våra produkter är lättanvända och moderna.</p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer med copyright och kontaktinformation -->
+<footer>
+    <p>&copy; 2023 Melitec. Alla rättigheter förbehållna.</p>
+    <p>Kontakt: info@melitec.se | Telefon: 012-345 6789</p>
+</footer>
+
+</body>
+</html>
